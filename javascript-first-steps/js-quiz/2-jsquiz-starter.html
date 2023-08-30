@@ -81,16 +81,25 @@
 
     // TODO 1: Declare & assign variables pointing to the corresponding element(s)
     // statement should be the "statement" div
+		let statement = document.getElementById("statement");
     // optionButtons should be all the elements within the "options" div
+		let optionButtons = document.querySelectorAll("#options button");
     // explanation should be the "explanation" div
+		let explanation = document.getElementById("explanation");
 
 
     // TODO 2: Declare & assign a variable called fact
     // Its value should be an object with a statement, true/false answer, and explanation 
+		const fact = {
+			statement: "JavaScript is a programming language.",
+			answer: true,
+			explanation: "JavaScript is a programming language. It is used to make web pages interactive."
+		}
     
 
     
     // TODO 3: Set the text of the statement element to the fact's statement
+		statement.innerText = fact.statement;
 
         
 
